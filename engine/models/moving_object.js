@@ -1,0 +1,3 @@
+const MovingObject = function (options) {
+
+};
