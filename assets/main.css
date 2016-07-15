@@ -1,0 +1,149 @@
+HTML {
+}
+@font-face {
+    font-family: 'Noto-Sans';
+    src: url('./fonts/NotoSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto-Sans-Japanese';
+  src: url('./fonts/NotoSansCJKjp-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, h1, h2, h3, ul, li {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: none;
+  line-height: 2;
+
+}
+
+body {
+  background: #121212;
+}
+
+h1, h2, h3 {
+  color: #e96677;
+  padding: 10px 0;
+}
+
+span {
+  font-size: 18px;
+  font-family: 'Noto-Sans', sans-serif;
+  border-radius: 5px;
+  padding: 10px;
+  display: block;
+  margin-right: 10px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #e96677;
+}
+
+ul, li, a {
+  font-family: 'Noto-Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: rgb(100, 228, 186);
+}
+
+a:hover {
+  border-bottom: 1px solid rgb(100, 228, 186);
+}
+
+.group::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+.modal-container {
+  /*display: none;*/
+  background-color: rgba(46, 46, 54, 0.9);
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.modal-content {
+  /*display: none;*/
+  border-radius: 10px;
+  color: #ffe9a3;
+  display: block;
+  width: 700px;
+  position: absolute;
+  left:50%;
+  top:40%;
+  margin-left: -350px;
+  margin-top: -240px;
+  z-index: 1000;
+  padding: 20px;
+  font-family: 'Noto-Sans', sans-serif;
+}
+
+.how-to-play {
+  font-family: 'Noto-Sans', sans-serif;
+  padding-right: 75px;
+  width: 325px;
+  float: left;
+}
+
+.controls {
+  font-family: 'Noto-Sans', sans-serif;
+  width: 300px;
+  float:left;
+  margin-bottom: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+canvas {
+  position: absolute;
+  height: 100%;
+  min-height: 600px;
+  width: 100%;
+  background-color: transparent;
+}
+
+canvas#nishikata-foreground {
+  height: 600px;
+  width: 800px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+canvas#nishikata-middleground {
+  height: 600px;
+  width: 1000px;
+  position: absolute;;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 50;
+}
+
+.modal-lost > .modal-content{
+  padding-top: 25px;
+  width: 400px;
+  margin-left: -200px;
+  margin-top: -200px;
+  text-align: center;
+}

@@ -5,10 +5,46 @@
     <title>Nishikata</title>
     <script type="application/javascript" src='./lib/bundle.js'>
     </script>
+    <link rel="stylesheet" href="./assets/main.css">
   </head>
   <body>
+    <div id='start-modal' class="modal-container">
+
+      <div class="modal-content">
+        <h1>Nishikata</h1>
+          <p>
+            Spirits ousted from their former home in the Far East came to reside in a secluded village in the American West. Alas, all was not quiet. Defend your new home from would-be invaders!
+          </p>
+        <div class="how-to-play group">
+          <h2>How to Play</h2>
+          <p>
+            Dodge enemy fire, and shoot down enemies to progress. Watch out for the boss!
+          </p>
+          <span id="start">Start Game</span>
+        </div>
+        <div class="controls group">
+          <h2>Controls</h2>
+          <p>
+            Arrow keys to move <br/>
+            Z to fire weapon <br/>
+            Hold Shift to move slower
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div id='lost-modal' class="modal-container modal-lost hidden">
+      <div class="modal-content">
+        <h2>Game Over</h2>
+        <span id="restart">Play Again</span>
+      </div>
+    </div>
+
+
     <div id='game-container'>
       <canvas id="nishikata-foreground" width="800" height="600"></canvas>
+      <canvas id="nishikata-middleground" width="1000" height="600"></canvas>
+      <canvas id="nishikata-background"></canvas>
     </div>
   </body>
 </html>
